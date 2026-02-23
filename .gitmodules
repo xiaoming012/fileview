@@ -1,6 +1,8 @@
 [submodule "fileview-frontend"]
 	path = fileview-frontend
 	url = https://github.com/basemetas/fileview-frontend.git
+	branch = main
 [submodule "fileview-backend"]
 	path = fileview-backend
 	url = https://github.com/basemetas/fileview-backend.git
+	branch = main

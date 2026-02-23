@@ -1,10 +1,31 @@
-# BaseMetas Fileview 在线文件预览引擎
+<div align="center">
+  <h1> BaseMetas Fileview 在线文件预览引擎</h1>
+  <p>新一代通用型在线文件预览引擎，全格式覆盖，跨平台，零依赖</p>
+  <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Image Version (tag)" src="https://img.shields.io/docker/v/basemetas/fileview/latest"></a>
+  <a href="https://github.com/BaseMetas/fileview/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/BaseMetas/fileview"></a>
+  <a href="https://hub.docker.com/r/basemetas/fileview/tags"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/basemetas/fileview"></a>
+  <a href="https://github.com/BaseMetas/fileview/graphs/contributors"><img src="https://img.shields.io/github/contributors/BaseMetas/fileview?style=flat-square" alt="contributors"></a>
+  <a href="https://github.com/BaseMetas/fileview/commits"><img src="https://img.shields.io/github/commit-activity/w/BaseMetas/fileview?style=flat-square" alt="commit activity"></a>
+  <a href="https://github.com/BaseMetas/fileview/issues"><img src="https://img.shields.io/github/issues-closed/BaseMetas/fileview?style=flat-square" alt="closed issues"></a>
+</div>
 
-新一代通用型在线文件预览引擎，具有以下特点：
-- 全格式覆盖，一套能力支撑所有文档场景
-- 快速接入，轻量级开发
-- 跨平台多终端适配
-- 无外部依赖、零插件 
+## 特性
+
+#### 全格式覆盖，一套能力支撑所有文档场景
+
+支持 Office、PDF、OFD 及 CAD、图片、代码文件、流程图、思维导图等数百种格式，统一预览入口，屏蔽格式差异，满足 OA、档案、网盘、IM、审批流等复杂业务场景需求。
+
+#### 快速接入，轻量级开发
+
+通过标准化接口即可快速接入文档预览服务，无需复杂改造，只需少量代码即可完成集成，显著降低开发成本，缩短上线周期。
+
+#### 跨平台多终端适配
+
+支持 PC 与 H5 多终端访问，兼容主流浏览器环境，文档内容可根据不同终端智能适配与重排，满足桌面端与移动端的统一在线预览需求。
+
+#### 无依赖、零插件
+
+无需依赖本地 Office 环境，也无需安装任何浏览器插件，即可通过浏览器实现文档在线预览，部署与使用更加轻量、可靠。
 
 ## 相关站点
 
@@ -56,5 +77,7 @@ npm run dev
 
 如果你想为 BaseMetas Fileview 实现一个重要功能，需要先按照模板撰写 RFC 文档，按照 BaseMetas Fileview 的[RFC 机制](./rfcs.md) 进行操作，在经过社区讨论完善后才可以进行代码的提交。
 
-## 用户交流群
+## 用户交流
+
+您可以使用 [Discussions](https://github.com/basemetas/fileview/discussions) 功能发起交流
 
