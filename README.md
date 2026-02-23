@@ -1,31 +1,48 @@
-# BaseMetas Fileview
+# BaseMetas Fileview 在线文件预览引擎
 
-## 新一代通用型在线文件预览引擎
+新一代通用型在线文件预览引擎，具有以下特点：
+- 全格式覆盖，一套能力支撑所有文档场景
+- 快速接入，轻量级开发
+- 跨平台多终端适配
+- 无外部依赖、零插件 
 
-#### 全格式覆盖，一套能力支撑所有文档场景
+## 相关站点
 
-支持 Office、PDF、OFD 及 CAD、图片、代码文件、流程图、思维导图等数百种格式，统一预览入口，屏蔽格式差异，满足 OA、档案、网盘、IM、审批流等复杂业务场景需求。
-
-#### 快速接入，轻量级开发
-
-通过标准化接口即可快速接入文档预览服务，无需复杂改造，只需少量代码即可完成集成，显著降低开发成本，缩短上线周期。
-
-#### 跨平台多终端适配
-
-支持 PC 与 H5 多终端访问，兼容主流浏览器环境，文档内容可根据不同终端智能适配与重排，满足桌面端与移动端的统一在线预览需求。
-
-#### 无依赖、零插件
-
-无需依赖本地 Office 环境，也无需安装任何浏览器插件，即可通过浏览器实现文档在线预览，部署与使用更加轻量、可靠。
-
-## 站点
-
-https://fileview.basemetas.cn
-
-## 在线体验
-
-https://file.basemetas.cn
+- 官方文档 https://fileview.basemetas.cn
+- 在线体验 https://file.basemetas.cn
 
 ## 开源地址
 
-目前产品正在打磨细节，做开源前的准备，预计在 2026 年一季度开源。
+- https://github.com/basemetas/fileview
+
+## 本地运行
+
+```bash
+# clone 代码，包含子仓库
+git clone --recurse-submodules https://github.com/basemetas/fileview.git
+
+# 使用容器启动服务端开发环境，需要先安装并启动 docker 服务
+cd fileview-backend
+docker compose up
+docker exec -it fileview-backend /bin/bash
+
+# 以上也可以在 IDE 中启动开发环境，如 vscode
+# vscode 中打开服务端项目根目录，点击左下角“在容器中重新打开”
+
+# 进入容器，启动预览服务和转换服务
+cd /var/app/fileview-backend
+chmod +x ./*.sh
+./start-preview.sh
+./start-convert.sh
+
+# 安装并启动前端开发环境，需要先安装 nodejs LTS 版本，如 nodejs v24+
+cd fileview-frontend
+npm i
+npm run dev
+
+```
+
+## 贡献指南
+
+## 用户交流群
+
