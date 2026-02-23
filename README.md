@@ -42,7 +42,20 @@ npm run dev
 
 ```
 
+## 问题反馈与建议
+
+在提 issue 前请确保满足以下条件：
+
+- 必须是一个 bug 或者功能新增。
+- 已经在 issue 中搜索过，并且没有找到相似的 issue 或者解决方案。
+- 推荐使用 [bug-report](./bug-report.md) 模板提交 issus
+
+> 强烈推荐阅读 [《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
+
 ## 贡献指南
+我们非常欢迎社区开发者为 BaseMetas Fileview 贡献代码，在贡献之前请先阅读[贡献指南](./CONTRIBUTING.md)。
+
+如果你想为 BaseMetas Fileview 实现一个重要功能，需要先撰写 RFC 文档，按照 BaseMetas Fileview 的[RFC 机制](./rfcs.md) 进行操作，在经过社区讨论完善后才可以进行代码的提交。
 
 ## 用户交流群
 

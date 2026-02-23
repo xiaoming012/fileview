@@ -1,0 +1,134 @@
+name: Bug 报告
+about: 创建一个 bug 报告帮助我们改进 Fileview
+title: '[Bug] '
+labels: ['Bug']
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您花时间报告 bug！请尽可能详细地填写以下信息。
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🐛 Bug 描述
+      description: 简要描述你遇到的问题
+      placeholder: 请详细描述遇到的问题...
+    validations:
+      required: true
+
+  - type: input
+    id: fileview-version
+    attributes:
+      label: 📦 Fileview 版本
+      description: 请填写您使用的 Fileview 版本
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: 🖥️ 操作系统
+      description: 请填写您的操作系统
+      placeholder: Windows 11 / macOS 13 / Ubuntu 22.04
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: 🌐 浏览器
+      description: 如果是前端问题，请填写浏览器信息
+      placeholder: Chrome 118 / Firefox 118 / Safari 17
+    validations:
+      required: false
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: 🚀 运行环境
+      description: 请选择您的部署方式
+      options:
+        - Docker
+        - Kubernetes
+        - 独立部署
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: java-version
+    attributes:
+      label: ☕ Java 版本
+      description: 后端运行的 Java 版本
+      placeholder: Java 17 / Java 21
+    validations:
+      required: true
+
+  - type: input
+    id: nodejs-version
+    attributes:
+      label: 🟩 Node.js 版本
+      description: 前端运行的 Node.js 版本
+      placeholder: Node.js 18 / Node.js 20
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment-info
+    attributes:
+      label: 📋 其他环境信息
+      description: 其他相关的环境信息
+      placeholder: Redis 版本、RocketMQ 版本等...
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 🔁 复现步骤
+      description: 请详细描述如何复现这个问题
+      placeholder: |
+        1. 
+        2. 
+        3. 
+        4.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: ✅ 期望结果
+      description: 描述你期望的正确行为
+      placeholder: 应该...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: ❌ 实际结果
+      description: 描述实际发生的行为或错误现象
+      placeholder: 实际...
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-logs
+    attributes:
+      label: 📋 日志 / 报错
+      description: 请提供相关的错误日志或堆栈跟踪
+      placeholder: |
+        ```bash
+        [错误日志内容]
+        ```
+      render: bash
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 📷 补充信息
+      description: 如有截图或其他补充信息，请在此处提供
+      placeholder: 可以上传截图、配置文件等相关信息...
