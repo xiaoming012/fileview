@@ -1,0 +1,25 @@
+name: Close Inactive Issues
+on:
+  schedule:
+    - cron: "0 0 * * *" # 每天运行
+  workflow_dispatch:
+
+jobs:
+  close-inactive-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Close inactive issues
+        uses: actions/stale@v9
+        with:
+          days-before-issue-stale: 90
+          days-before-issue-close: 7
+          stale-issue-label: "stale"
+          stale-issue-message: "This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs."
+          close-issue-message: "This issue was closed because it has been inactive for 90 days. Please feel free to reopen it if you believe this issue is still relevant and needs attention."
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          exempt-issue-labels: "bug,enhancement,help wanted,good first issue,pinned"
+          only-labels: ""
+          operations-per-run: 30
